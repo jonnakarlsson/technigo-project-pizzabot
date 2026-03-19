@@ -30,7 +30,54 @@ let foodType;
     }
 
 // Step 3 - Subtype choice
-// Your code goes here
+
+let dishChoice; 
+if (foodType==="pizza"){
+  prompt(
+    `Please select a number to choose your choice of pizza: \n1 = Feta Cheese Pizza\n2 = Calzone\n3 = Bot-Spetzial Pizza`
+    );
+  }
+  else if (foodType === "pasta"){
+    prompt(
+    `Please select a number to choose your choice of Pasta: \n1 = Carbonara\n2 = Bolognese\n3 = Bot-Spetzial Pasta`
+    );
+  }
+  else if (foodType === "sallad"){
+    prompt(
+    `Please select a number to choose your choice of pizza: \n1 = Ceasar sallad\n2 = Goat Cheese sallad\n3 = Bot-Spetzial Sallad`
+    );
+  }
+
+let dish; 
+  if (foodType === pizza && dishChoice === 1){
+    dish = "feta";
+  }
+  else if (foodType === pizza && dishChoice === 2){
+    dish = "goatCheese";
+  }
+  else if (foodType === pizza && dishChoice === 1){
+    dish = "specPizza";
+  }
+  else if (foodType === pasta && dishChoice === 1){
+    dish = "carbonara";
+  }
+  else if (foodType === pasta && dishChoice === 2){
+    dish = "bolognese";
+  }
+  else if (foodType === pasta && dishChoice === 1){
+    dish = "specPasta";
+  }
+  else if (foodType === sallad && dishChoice === 1){
+    dish = "ceasar";
+  }
+  else if (foodType === sallad && dishChoice === 2){
+    dish = "goatCheese";
+  }
+  else if (foodType === sallad && dishChoice === 1){
+    dish = "specSallad";
+  }
+  else
+    alert (`Sorry, you must make a valid choice!`)
 
 // Step 4 - Age
 // Your code goes here
