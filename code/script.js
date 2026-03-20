@@ -10,7 +10,10 @@ alert(`Hi ${firstname}`);
 // Step 2 - Food choice
 
 let typeChoice = prompt(
-  `Please select a number to choose your choice of food: \n1 = Pizza\n2 = Pasta\n3 = Salad`,
+  `Please select a number to choose your choice of food: 
+  1 = Pizza 
+  2 = Pasta
+  3 = Salad`,
 );
 
 let foodType;
@@ -33,7 +36,10 @@ let finalDish;
 
 if (foodType === "pizza") {
   let pizzaChoice = prompt(
-    `Please select a number to choose your choice of pizza: \n1 = Feta Cheese Pizza\n2 = Calzone\n3 = Bot-Spetzial Pizza`,
+    `Please select a number to choose your choice of pizza: 
+    1 = Feta Cheese Pizza
+    2 = Calzone
+    3 = Bot-Spetzial Pizza`,
   );
   if (pizzaChoice === "1") finalDish = "Feta Cheese Pizza";
   else if (pizzaChoice === "2") finalDish = "Calzone";
@@ -41,7 +47,10 @@ if (foodType === "pizza") {
   else alert("Invalid choice");
 } else if (foodType === "pasta") {
   let pastaChoice = prompt(
-    `Please select a number to choose your choice of Pasta: \n1 = Carbonara\n2 = Bolognese\n3 = Bot-Spetzial Pasta`,
+    `Please select a number to choose your choice of Pasta: 
+    1 = Carbonara
+    2 = Bolognese
+    3 = Bot-Spetzial Pasta`,
   );
   if (pastaChoice === "1") finalDish = "Carbonara";
   else if (pastaChoice === "2") finalDish = "Bolognese";
@@ -49,7 +58,10 @@ if (foodType === "pizza") {
   else alert("Invalid choice");
 } else if (foodType === "salad") {
   let saladChoice = prompt(
-    `Please select a number to choose your choice of Salad: \n1 = Ceasar salad\n2 = Goat Cheese salad\n3 = Bot-Spetzial Salad`,
+    `Please select a number to choose your choice of Salad: 
+    1 = Ceasar salad
+    2 = Goat Cheese salad
+    3 = Bot-Spetzial Salad`,
   );
   if (saladChoice === "1") finalDish = "Ceasar salad";
   else if (saladChoice === "2") finalDish = "Goat Cheese salad";
@@ -60,7 +72,18 @@ if (foodType === "pizza") {
 alert(`You picked ${finalDish}`);
 
 // Step 4 - Age
-// Your code goes here
+let age = prompt(`Please enter your age`);
+let adult;
+if (age >= 13) {
+  adult = true;
+}
+let price;
+if (adult) {
+  price = 15;
+} else {
+  price = 9;
+}
+alert(`Your price is ${price} EUR`);
 
 // Step 5 - Order confirfinalDishion
 // Your code goes here
