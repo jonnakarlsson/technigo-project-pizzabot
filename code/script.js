@@ -86,4 +86,30 @@ if (adult) {
 alert(`Your price is ${price} EUR`);
 
 // Step 5 - Order confirfinalDishion
-// Your code goes here
+
+let order;
+
+if (adult) {
+  let confirmation = prompt(
+    `You selected a ${finalDish}, and the price will be ${price}. 
+    Select a number to confirm:
+  1 = I confirm my order 
+  2 = I changed my mind`,
+  );
+  if (confirmation === "1") order = true;
+  else if (confirmation === "2") order = false;
+  else alert(`Invalid choice!`);
+} else {
+  let confirmation = prompt(
+    `You selected a childsize ${finalDish}, and the price will be ${price}. 
+    Select a number to confirm:
+  1 = I confirm my order 
+  2 = I changed my mind`,
+  );
+  if (confirmation === "1") order = true;
+  else if (confirmation === "2") order = false;
+  else alert(`Invadid choice!`);
+}
+if (order) {
+  alert(`Thank you for your order! It will be ready for pick-up in 10 minutes`);
+}
